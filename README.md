@@ -46,8 +46,10 @@ dsh plugin --profile web add D:\plugins\dsh-repo-setup
 - **Repo hygiene** — AGENTS.md 缺失、git 未初始化、无测试、数据库线索
 - **Recommended installs** — 一键命令:
   - `mattpocock-skills-dsh`(grilling/to-spec/to-tickets/tdd/code-review 工作流)
+  - `mattpocock-skills-dsh-zh`(中文技能版,与英文版二选一)
   - `superpowers-dsh`(规划→TDD→评审方法论)
   - `dsh-ponytail-skills`(防过度工程)
+  - `dsh-ecc-skills`(ECC 273 技能:模式/编排/垂直领域)
   - `dsh-claude-mem`(可选:跨会话记忆)
   - `dsh-mcp-manager`(挂载下方 MCP 用)
   - MCP:context7(库文档)、playwright(前端)、postgres、github(按检测结果)
