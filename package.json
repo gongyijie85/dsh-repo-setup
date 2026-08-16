@@ -16,6 +16,14 @@
     "LICENSE"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gongyijie85/dsh-repo-setup.git"
+  },
+  "homepage": "https://github.com/gongyijie85/dsh-repo-setup",
+  "bugs": {
+    "url": "https://github.com/gongyijie85/dsh-repo-setup/issues"
+  },
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -30,7 +38,8 @@
     "@deepseek-ai/cordis": "^4.0.1"
   },
   "scripts": {
-    "verify": "node scripts/verify-tool.mjs"
+    "verify": "node scripts/verify-tool.mjs",
+    "prepublishOnly": "node scripts/verify-tool.mjs"
   },
   "dsh": {
     "bundle": {

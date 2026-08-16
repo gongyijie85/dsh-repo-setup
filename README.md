@@ -9,8 +9,13 @@
 ## 安装
 
 ```sh
+# npm
+dsh plugin --profile web add dsh-repo-setup
+
+# GitHub
 dsh plugin --profile web add github:gongyijie85/dsh-repo-setup
-# 或本地开发
+
+# 本地开发
 dsh plugin --profile web add D:\plugins\dsh-repo-setup
 ```
 
