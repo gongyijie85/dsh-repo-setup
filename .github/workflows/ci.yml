@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install harness tool API (peer dependency)
+        run: npm install --no-save --no-package-lock "@deepseek-ai/dsh-tools@>=0.0.1-rc.1 <0.2.0"
+      - name: Syntax check
+        run: node --check lib/index.js
+      - name: Tool smoke test
+        run: node scripts/verify-tool.mjs

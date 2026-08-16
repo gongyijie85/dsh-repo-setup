@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/dsh-repo-setup)](https://www.npmjs.com/package/dsh-repo-setup)
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/dsh-repo-setup)](https://github.com/gongyijie85/dsh-repo-setup/releases)
+[![CI](https://github.com/gongyijie85/dsh-repo-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/gongyijie85/dsh-repo-setup/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 <div align="center">

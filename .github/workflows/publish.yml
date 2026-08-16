@@ -1,0 +1,23 @@
+name: publish
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - name: Install harness tool API (peer dependency)
+        run: npm install --no-save --no-package-lock "@deepseek-ai/dsh-tools@>=0.0.1-rc.1 <0.2.0"
+      - name: Verify before publish
+        run: node scripts/verify-tool.mjs
+      - name: Publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
