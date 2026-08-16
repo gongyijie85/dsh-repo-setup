@@ -1,5 +1,14 @@
 # dsh-repo-setup
 
+[![npm version](https://img.shields.io/npm/v/dsh-repo-setup)](https://www.npmjs.com/package/dsh-repo-setup)
+[![GitHub release](https://img.shields.io/github/v/release/gongyijie85/dsh-repo-setup)](https://github.com/gongyijie85/dsh-repo-setup/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+> **English:** Repo bootstrap guidance for DeepSeek Harness — the counterpart of
+> Anthropic's claude-code-setup. Registers one read-only tool, `repo_setup_scan`,
+> that detects stack / tests / docs / git / db hints and recommends skill plugins,
+> MCP servers and hygiene files to install. Never modifies anything.
+
 仓库体检引导插件 —— Anthropic **claude-code-setup** 的 DeepSeek Harness 版。
 
 注册一个**只读**工具 `repo_setup_scan`:扫描项目目录的语言栈、测试设置、
@@ -36,7 +45,9 @@ dsh plugin --profile web add D:\plugins\dsh-repo-setup
 - **Recommended installs** — 一键命令:
   - `mattpocock-skills-dsh`(grilling/to-spec/to-tickets/tdd/code-review 工作流)
   - `superpowers-dsh`(规划→TDD→评审方法论)
-  - `dsh-ponytail`(防过度工程)
+  - `dsh-ponytail-skills`(防过度工程)
+  - `dsh-claude-mem`(可选:跨会话记忆)
+  - `dsh-mcp-manager`(挂载下方 MCP 用)
   - MCP:context7(库文档)、playwright(前端)、postgres、github(按检测结果)
 
 ## 工作原理
