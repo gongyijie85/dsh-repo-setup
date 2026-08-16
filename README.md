@@ -4,10 +4,11 @@
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/dsh-repo-setup)](https://github.com/gongyijie85/dsh-repo-setup/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> **English:** Repo bootstrap guidance for DeepSeek Harness — the counterpart of
-> Anthropic's claude-code-setup. Registers one read-only tool, `repo_setup_scan`,
-> that detects stack / tests / docs / git / db hints and recommends skill plugins,
-> MCP servers and hygiene files to install. Never modifies anything.
+<div align="center">
+
+[English](README.en.md) | **简体中文**
+
+</div>
 
 仓库体检引导插件 —— Anthropic **claude-code-setup** 的 DeepSeek Harness 版。
 
