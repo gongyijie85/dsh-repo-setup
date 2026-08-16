@@ -1,0 +1,8 @@
+# dsh-repo-setup bundle patch: register the read-only repo bootstrap scanner
+# tool on the host tools registry.
+#
+# This patch is applied over the dsh-base layer; later layers (the profile's
+# own cordis.patch.yml and --patch overlays) can still address this row by id.
+- insert:
+    - id: dsh-repo-setup
+      name: 'dsh-repo-setup'
