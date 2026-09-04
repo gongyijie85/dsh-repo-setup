@@ -4,6 +4,8 @@
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/dsh-repo-setup)](https://github.com/gongyijie85/dsh-repo-setup/releases)
 [![CI](https://github.com/gongyijie85/dsh-repo-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/gongyijie85/dsh-repo-setup/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![DSH](https://img.shields.io/badge/DSH-0.1.1--rc.2%2B-4d6bfe)](https://github.com/gongyijie85/dsh-repo-setup)
+[![-仓库体检](https://img.shields.io/badge/-仓库体检-4d6bfe)]() [![-只读扫描](https://img.shields.io/badge/-只读扫描-4d6bfe)]() [![-推荐安装](https://img.shields.io/badge/-推荐安装-4d6bfe)]() [![-MCP](https://img.shields.io/badge/-MCP-4d6bfe)]()
 
 <div align="center">
 
@@ -18,6 +20,8 @@
 该挂哪些 MCP 服务器、该补哪些卫生文件。**绝不修改任何东西。**
 
 ## 安装
+
+**支持的 DSH 版本**：`>=0.1.1-rc.2`（已在上线版本验证，兼容更高版本）。
 
 ```sh
 # npm

@@ -3,6 +3,8 @@
 [![npm version](https://img.shields.io/npm/v/dsh-repo-setup)](https://www.npmjs.com/package/dsh-repo-setup)
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/dsh-repo-setup)](https://github.com/gongyijie85/dsh-repo-setup/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![DSH](https://img.shields.io/badge/DSH-0.1.1--rc.2%2B-4d6bfe)](https://github.com/gongyijie85/dsh-repo-setup)
+[![-repo-scan](https://img.shields.io/badge/-repo--scan-4d6bfe)]() [![-read-only](https://img.shields.io/badge/-read--only-4d6bfe)]() [![-recommend-install](https://img.shields.io/badge/-recommend--install-4d6bfe)]() [![-MCP](https://img.shields.io/badge/-MCP-4d6bfe)]()
 
 Repo bootstrap guidance for the **DeepSeek Harness (DSH)** — the counterpart of
 Anthropic's **claude-code-setup**.
