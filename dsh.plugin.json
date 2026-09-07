@@ -1,6 +1,6 @@
 {
   "id": "gongyijie85/dsh-repo-setup",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "./lib/index.js",
   "description": "Repo bootstrap guidance for DeepSeek Harness: read-only repo_setup_scan tool that detects stack/tests/docs/git/db and recommends skill plugins, MCP servers and hygiene files to install (claude-code-setup counterpart)",
   "engines": {
