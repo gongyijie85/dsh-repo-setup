@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.4] - 2026-09-10
+
+### Changed
+
+- 新增 `peerDependencies`：`@deepseek-ai/dsh-tools ">=0.0.1-rc.1 <0.2.0"` 与 `@deepseek-ai/cordis "^4.0.1"`（显式声明宿主契约；`repo_setup_scan` 依赖 dsh-tools 的工具定义路径）。
+- `dsh.compatibility.dshReleases` 由 17 键补至 20 键：新增 `0.1.5-alpha.2` / `0.1.5-rc.1` / `0.1.5-rc.2`（均 `compatible`），适配 0.1.5 线宿主；`engines.dsh` 维持 `>=0.1.0-rc.6`。
+- README 的"支持的 DSH 版本"由 `>=0.1.1-rc.2` 更正为 `>=0.1.0-rc.6`（与 manifest 一致）。
+
+> 0.1.2 / 0.1.3 未在本文件留条目，本次一并记录当前状态。
+
 ## [0.1.1] - 2026-08-16
 
 ### Changed
