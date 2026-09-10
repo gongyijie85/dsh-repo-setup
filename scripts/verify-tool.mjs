@@ -6,7 +6,14 @@
 import { apply } from '../lib/index.js'
 
 let captured
+const disposeFns = []
 const ctx = {
+  // 官方 ctx.effect(fn) 绑定 fiber 生命周期并返回释放句柄；stub 执行回调并记录句柄。
+  effect(fn) {
+    const dispose = fn()
+    if (typeof dispose === 'function') disposeFns.push(dispose)
+    return () => { for (const d of disposeFns) d() }
+  },
   tools: {
     register(descriptor) {
       captured = descriptor

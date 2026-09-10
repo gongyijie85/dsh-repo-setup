@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.5] - 2026-09-10
+
+### Changed
+
+- **工具注册显式绑定 fiber 生命周期**：`ctx.tools.register(defineTool({...}))` 改为 `ctx.effect(() => ctx.tools.register(defineTool({...})))`，与官方插件约定一致（重载/卸载时随 fiber 释放，避免重复注册与悬挂注册）。
 ## [0.1.4] - 2026-09-10
 
 ### Changed

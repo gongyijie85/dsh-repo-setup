@@ -1,7 +1,7 @@
 {
   "name": "dsh-repo-setup",
   "description": "Repo bootstrap guidance for DeepSeek Harness: read-only repo_setup_scan tool that detects stack/tests/docs/git/db and recommends skill plugins, MCP servers and hygiene files to install (claude-code-setup counterpart)",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "type": "module",
   "engines": {
