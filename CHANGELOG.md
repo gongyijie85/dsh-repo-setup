@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.9] - 2026-11-17
+
+### Changed
+
+- 桌面已从 0.2.1 线升级到 `0.2.2-rc.3`（nightly），冒烟通过后补声明：`dshReleases["0.2.2-rc.3"] = "compatible"`，`engines.dsh` 维持 `>=0.1.0-rc.6 <0.3.0`。
+- `repo_setup_scan` 在本机宿主活体可用（本会话工具目录内可见，且在临时 profile 里真实执行成功），工具注册与执行路径未变。
+- **修复 `scripts/verify-tool.mjs` 的发布门禁**：仓库目录没有 `node_modules` 时 `@deepseek-ai/dsh-tools` 无法解析，`prepublishOnly` 会直接失败。现在改为明确输出 `SKIP:` 并成功退出（在 profile / 完整检出里仍照常执行），使 `npm publish` 在任意目录可用。
+- `dsh.plugin.json` 版本号同步到 0.1.9。
+- 0.2.2-rc.1 / rc.2 未单独声明（未在对应构建上冒烟）。
+
 ## [0.1.8] - 2026-11-05
 
 ### Changed

@@ -3,7 +3,20 @@
 //
 // Fakes the ctx.tools.register surface, captures the tool descriptor built by
 // defineTool, then executes it against real directories and checks the report.
-import { apply } from '../lib/index.js'
+//
+// 注意：lib/index.js 会 import 宿主包 @deepseek-ai/dsh-tools。仓库目录通常没有
+// node_modules（依赖由安装它的 DSH profile 提供），此时这里明确 SKIP 而不是
+// 把「环境缺少宿主包」伪装成通过；在 profile / 完整检出里运行会照常执行。
+let apply
+try {
+  ;({ apply } = await import('../lib/index.js'))
+} catch (error) {
+  if (error?.code === 'ERR_MODULE_NOT_FOUND') {
+    console.log('SKIP: 无法解析宿主包（仓库目录无 node_modules，且当前不在 DSH profile 内）；请在 profile/完整检出中运行，或先安装依赖。')
+    process.exit(0)
+  }
+  throw error
+}
 
 let captured
 const disposeFns = []
